@@ -62,8 +62,8 @@ jobs:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           COMPONENT_NAME: "ui"
         run: |
-          docker build -f .devops/docker/$COMPONENT_NAME.dockerfile -t $REGISTRY/$ENVIRONMENT/$COMPONENT_NAME:$SHA8 src/$COMPONENT_NAME/
-          docker push $REGISTRY/$ENVIRONMENT/$COMPONENT_NAME:$SHA8
+          docker build -f .devops/docker/$COMPONENT_NAME.dockerfile -t $REGISTRY/$COMPONENT_NAME:$SHA8 src/$COMPONENT_NAME/
+          docker push $REGISTRY/$COMPONENT_NAME:$SHA8
       # - name: Build auth image and push to ECR
       #   env:
       #     SHA8: ${{ needs.get_inputs.outputs.sha8 }}
