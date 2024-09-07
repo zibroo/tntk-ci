@@ -13,8 +13,8 @@ on:
 
 env:
   ENVIRONMENT: ${{ github.ref_name }}
-  ACCOUNT_ID: ${{ vars.ACCOUNT_ID }}
-  AWS_REGION: ${{ vars.AWS_REGION }}
+  ACCOUNT_ID: 905418159684
+  AWS_REGION: us-east-1
   # BASE_DOMAIN: ${{ vars.BASE_DOMAIN }}
   # APPLICATION_NAME: ${{ vars.APPLICATION_NAME }}
   # APPLICATION_NAMESPACE: ${{ vars.APPLICATION_NAMESPACE }}
